@@ -1,4 +1,4 @@
-# Creating a Covid-19 info chatbot with Facebook app and Wit.ai
+# Creating a COVID-19 info chatbot with Facebook app and Wit.ai
 
 We are going to create a Facebook Messenger Chatbot in this tutorial, which will inform users whether it's safe to perform a certain activity or not. It will also provide a handy advice on how to stay safe during COVID-19 pandemic. 
 
