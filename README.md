@@ -14,14 +14,14 @@ After this tutorial, you and your students will know
 Let's explore about:  
 
 [Skills and Conversation Scenarios](#skills-and-conversation-scenarios)  
-[Dialog Example](#dialog-example)  
-[Training Wit.ai](#training-wit-ai)
-[Facebook Page](#facebook-page)
-[Facebook App](#facebook-app)
-[Glitch App](#glitch-app)
-[Environment Variables](#environment-variables)
-[Airtable](#airtable)
-[Testing your Chatbot](#testing-your-chatbot)
+[Dialog Example](#dialog-example)   
+[Training Wit.ai](#training-wit.ai)     
+[Facebook Page](#facebook-page)  
+[Facebook App](#facebook-app)  
+[Glitch App](#glitch-app)  
+[Environment Variables](#environment-variables)  
+[Airtable](#airtable)  
+[Testing your Chatbot](#testing-your-chatbot)  
 
 Main source for health information is CDC official ["Daily Activities and Going Out" safety guide](https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/going-out.html).
 
@@ -254,7 +254,7 @@ First, let's get the app secret. Let's go to your Facebook app → Settings → 
 
 ![Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/2020-10-25_18.12.38.gif](Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/2020-10-25_18.12.38.gif)
 
-Then, let's get the **WIT_TOKEN**. Go to your [WIT.AI](http://wit.AI) app, copy **Server Access** token and paste it in the  **WIT_TOKEN** of the Glitch `.env`
+Then, let's get the **WIT_TOKEN**. Go to your [Wit.ai](http://wit.AI) app, copy **Server Access** token and paste it in the  **WIT_TOKEN** of the Glitch `.env`
 
 ![Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/2020-10-25_18.16.38.gif](Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/2020-10-25_18.16.38.gif)
 
