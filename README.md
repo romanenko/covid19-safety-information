@@ -1,6 +1,6 @@
 # Creating a COVID-19 info chatbot with Facebook app and Wit.ai
 
-We are going to create a Facebook Messenger Chatbot in this tutorial, which will inform users whether it's safe to perform a certain activity or not. It will also provide a handy advice on how to stay safe during COVID-19 pandemic. 
+You are going to create a Facebook Messenger Chatbot in this tutorial, which will inform users whether it's safe to perform a certain activity or not. It will also provide a handy advice on how to stay safe during COVID-19 pandemic. 
 
 [Watch the short video about it](https://www.youtube.com/watch?v=FrucqUNOy9A)
 
@@ -15,21 +15,21 @@ Main source for health information is CDC official ["Daily Activities and Going 
 
 ## Skills and Conversation Scenarios
 
-Users will discover our bot via link, or by visiting a Facebook page and start chatting. It can also be embedded to any webpage [via Facebook Chat Plugin](https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/). 
+Users will discover your bot via link, or by visiting a Facebook page and start chatting. It can also be embedded to any webpage [via Facebook Chat Plugin](https://developers.facebook.com/docs/messenger-platform/discovery/facebook-chat-plugin/). 
 
 Once the conversation started — bot should **greet the user** with introductory message, describing its purpose and giving a hint of how to start interaction — by **asking what activity user is scheming to do**. After that, bot will **ask three questions** to learn more about the environment and social distancing factors, **evaluate the risk** and **end the conversation** with a relevant link to read more about the activity on CDC website.
 
-This brings us to the three skills, we need our bot to have:
+This brings you and your students to the three skills, you need your bot to have:
 
 1. Greet the user and provide instructions
 2. Perform a simple quiz
 3. Handle gibberish (random input) and politely bring user back to known scenarios
 
-We'll use Facebook and its [Messenger Platform](https://developers.facebook.com/docs/messenger-platform/) to provide conversational interface to our user, Wit.ai to make it understand input in natural language and [Airtable](https://airtable.com) to store health information about the activities and to keep the progress of the Quiz.
+You will use Facebook and its [Messenger Platform](https://developers.facebook.com/docs/messenger-platform/) to provide conversational interface to the user, Wit.ai to make it understand input in natural language and [Airtable](https://airtable.com) to store health information about the activities and to keep the progress of the Quiz.
 
 ## Dialog Example
 
-Example of conversation the user might have with our bot:
+Example of conversation the user might have with your bot:
 
 ```
 🤖: Hey! Nice to meet you! You can ask me for advice whether it is safe
@@ -56,10 +56,10 @@ Example of conversation the user might have with our bot:
 
 👩‍🦰: 🤸‍♀️
 
-🤖: Ok! Seem like visiting a hair salon is a safe thing to do! 
+🤖: Ok! Seems like visiting a hair salon is a safe thing to do! 
     Learn more about CDC guidelines in: https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/personal-social-activities.html#nails
 
-🤖: Try asking me about another activity. Like: "Is it safe to go to gym?"
+🤖: Try asking me about another activity. Like: "Is it safe to go to the gym?"
 
 // And so on...
 ```
@@ -74,7 +74,7 @@ Let's start by signing up for [Wit.ai](http://wit.AI) account and creating the A
 
 ![Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/Screen_Shot_2020-10-25_at_3.02.07_PM.png](Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/Screen_Shot_2020-10-25_at_3.02.07_PM.png)
 
-In order to use Wit.ai, we need to **train** the model inside of it.
+In order to use Wit.ai, you need to **train** the model inside of it.
 
 The goal of training is to create an accurate model that answers our questions correctly most of the time.
 
@@ -86,7 +86,7 @@ To train your Wit.ai app, you need to give **utterances** (questions that users 
 
 You don’t need to describe every way of the questions. Wit will infer this from the few examples you gave. These examples are the training set of your Wit. So, the more examples you give, the better your app will understand what your users are saying.
 
-You also want to teach Wit that you have some **intent** for these utterances, like getting the safety information. To do so, In the **Choose or add an Intent** dropdown, enter the name of your new intent and click **Create Intent**. 
+You also want to teach Wit that you have some **intent** for these utterances, like getting the safety information. To do so, in the **Choose or add an Intent** dropdown, enter the name of your new intent and click **Create Intent**. 
 
 ![Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/Screen_Shot_2020-10-25_at_3.14.40_PM.png](Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/Screen_Shot_2020-10-25_at_3.14.40_PM.png)
 
@@ -102,7 +102,7 @@ Messenger platform is built with Customer to Business communication in mind, so 
 
 The page can be used to guide potential users with the main features of the bot and share useful information with your audience in the future.
 
-Start by opening the Facebook Page creation interface and filling in the **Name** and **Category** fields. Best categories for our project could be "Health" or "Education". You can skip adding profile and cover pictures and fill them in later. When you are ready to proceed, hit **Create Page** and you are done.
+Start by opening the Facebook Page creation interface and filling the **Name** and **Category** fields. Best categories for your project could be "Health" or "Education". You can skip adding profile and cover pictures and fill them later. When you are ready to proceed, hit **Create Page** and you are done.
 
 Once the Page is created, it'll be shown to you in Admin mode by default. You'll need to switch to Visitor Preview mode to see how it'll appear to visitors, and, most importantly, to access the Chat interface.
 
@@ -110,7 +110,7 @@ Once the Page is created, it'll be shown to you in Admin mode by default. You'll
 
 ![Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/2020-10-25_17.11.42.gif](Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/2020-10-25_17.11.42.gif)
 
-In its initial state chat is just the conversation, where human admins of the Page are interacting with visitors. What we want is a Machine that can do it automatically. Here enters the Facebook App — another step to automate process of having a dialog with our audience.
+In its initial state chat is just the conversation, where human admins of the Page are interacting with visitors. What you want is a Machine that can do it automatically. Here enters the Facebook App — another step to automate process of having a dialog with your audience.
 
 ### Facebook App
 
@@ -120,9 +120,9 @@ When you are done "**My Apps**" menu item will become available. Follow it and s
 
 ![Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/Screen_Shot_2020-10-25_at_2.41.00_PM.png](Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/Screen_Shot_2020-10-25_at_2.41.00_PM.png)
 
-As we mentioned earlier, Messenger Platform initially was build to benefit and enrich business interactions, so App setup would go easier if we select **"Manage Business Integrations"** category on the first step. If you picked something else, or, literally "Something Else" — not a big deal! You can always customize features and integrations of the App in the future.
+As this mentioned earlier, Messenger Platform initially was build to benefit and enrich business interactions, so App setup would go easier if you select **"Manage Business Integrations"** category on the first step. If you picked something else, or, literally "Something Else" — not a big deal! You can always customize features and integrations of the App in the future.
 
-After the creation, you can add some products to the app. We are going to set up "**Messenger**".
+After the creation, you can add some products to the app. You are going to set up "**Messenger**".
 
 The first thing to do after clicking "**Set up**" button is to add a page. Follow the steps in the popup window and select your Facebook page that you want to use the bot with.
 
@@ -130,7 +130,7 @@ The first thing to do after clicking "**Set up**" button is to add a page. Follo
 
 ## Glitch App
 
-Now, it's time to add a code to hook up all these things together! We need a Node.js app to make a bridge between Facebook app and [Wit.ai](http://wit.ai) App. 
+Now, it's time to add a code to hook up all these things together! You need a Node.js app to make a bridge between Facebook app and [Wit.ai](http://wit.ai) App. 
 
 No need to worry, there is a base code in the [Glitch](https://glitch.com/~covid-19-bot-tutorial) and you can simply copy the whole project with "**Remix Projec**t" button and adjust it as you want. It is going to be a project with same code but act as a unique App with the unique combination of environment variables.
 
@@ -153,7 +153,7 @@ The most notable part is the message handler code:
 // Retreiving unique sender id to identify user across different calls
 const sender = event.sender.id;
 
-// We define messages as array of objects
+// Define messages as array of objects
 // with required `text` parameter for the message
 // and a possible `meta` field with potential additional configuration
 // to enhance the message with attachments or Quick Replies in the future
@@ -167,11 +167,11 @@ let messages = [
 ];
 
 // Fetching the quiz session object, associated with the sender
-// to understand whether we are in the process of quiz 
+// to understand whether you are in the process of quiz 
 const currentQuiz = await quiz.getRunningQuiz(sender);
 
 if (currentQuiz) {
-  // If we are — pass the inbound text to the handler function 
+  // If you are — pass the inbound text to the handler function 
   // to continue or to end the ongoing quiz
   messages = await quiz.handleQuizAnswer(currentQuiz, text);
 } else {
@@ -226,17 +226,17 @@ Where each step of it has a `question` and set of `quickReplies` to suggest to t
 
 ### db.js and messenger.js
 
-These modules are used to help establish communication with Facebook Messenger Platform and Airtable API and to provide handy functions to perform basic operations — send messages, retrieve or update a record in Airtable database
+These modules are used to help establish communication with Facebook Messenger Platform and Airtable API and to provide handy functions to perform basic operations — send messages, retrieve or update a record in Airtable database.
 
 ## Environment Variables
 
-Variables which gets to set in the environment of the app, before it gets executed. Values then are used in code — this is a common practice to keep secret keys separate from the codebase.
+Variables which get to set in the environment of the app, before it gets executed. Values then are used in code — this is a common practice to keep secret keys separate from the codebase.
 
 In this project you can control them by modifying the `.env` file and Glitch has a neat UI to manage it:
 
 ![Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/Untitled.png](Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/Untitled.png)
 
-Now, we are going to fill the environment variables which are required to connect Facebook app and [Wit.ai](http://wit.ai) app.
+Now, you are going to fill the environment variables which are required to connect Facebook app and [Wit.ai](http://wit.ai) app.
 
 First, let's get the app secret. Let's go to your Facebook app → Settings → Basic. Copy and paste the **App Secret** in the FB_APP_SECRET of the Glitch `.env`. It may require your facebook password to get **App Secret** for the first time. 
 
@@ -246,7 +246,7 @@ Then, let's get the **WIT_TOKEN**. Go to your [WIT.AI](http://wit.AI) app, copy 
 
 ![Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/2020-10-25_18.16.38.gif](Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/2020-10-25_18.16.38.gif)
 
-We also need to provide other environment variables such as **FB_PAGE_TOKEN**, **FB_VERIFY_TOKEN**, **AIRTABLE_API_KEY**, **AIRTABLE_DB_NAME**. We can just type random values for these variables temporarily. 
+You also need to provide other environment variables such as **FB_PAGE_TOKEN**, **FB_VERIFY_TOKEN**, **AIRTABLE_API_KEY**, **AIRTABLE_DB_NAME**. We can just type random values for these variables temporarily. 
 
 Go to your Facebook App → Messenger → Settings and generate click "Add callback URL".  You can find callback URL in Glitch → Share → Live app. Paste it and don't forget to add "/webhook" to the end of the url.
 
@@ -258,13 +258,13 @@ The last step is **FB_PAGE_TOKEN**. Go to your Facebook app → Messenger → Se
 
 ## Airtable
 
-Every time our Node app receives the message — we should assume it might be unaware of all previous actions. To keep it in context of ongoing conversation we have to keep the state of it in some **persistence layer.** 
+Every time your Node app receives the message — you should assume it might be unaware of all previous actions. To keep it in context of ongoing conversation you have to keep the state of it in some **persistence layer.** 
 
-Some apps doesn't require having one, but conversational apps, usually do. In our case, we will keep quiz progress across the dialog events and remove it, once the quiz is completed — we don't need to keep any extra data after it.
+Some apps doesn't require having one, but conversational apps, usually do. In this case, you will keep quiz progress across the dialog events and remove it, once the quiz is completed — you don't need to keep any extra data after it.
 
-We will use [Airtable](https://airtable.com/) as a simple service to store session data for ongoing quizzes and access it with its handy JavaScript library.
+You will use [Airtable](https://airtable.com/) as a simple service to store session data for ongoing quizzes and access it with its handy JavaScript library.
 
-Start by signing up for an Airtable account and creating a Workspace
+Start by signing up for an Airtable account and creating a Workspace.
 
 ![Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/CleanShot_2020-10-26_at_19.32.36.gif](Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/CleanShot_2020-10-26_at_19.32.36.gif)
 
@@ -276,7 +276,7 @@ Your database will have a table, created for you by default:
 
 ![Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/Untitled%201.png](Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/Untitled%201.png)
 
-We can keep it, but change it for our needs. Change the name of the table to **"Quizzes"** and configure four columns with the following configuration:
+You can keep it, but change it for your needs. Change the name of the table to **"Quizzes"** and configure four columns with the following configuration:
 
 - **SessionId** — Single line text
 - **Activity** — Single line text
@@ -288,7 +288,7 @@ This is what end result should look like:
 
 ![Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/Untitled%202.png](Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/Untitled%202.png)
 
-Now, to connect this table to our Glitch app, we'll need to get its Base id and API Key. The easiest way to get them is to take a peek to its dynamically generated API documentation.
+Now, to connect this table to your Glitch app, you'll need to get its Base id and API Key. The easiest way to get them is to take a peek to its dynamically generated API documentation.
 
 Navigate to: [https://airtable.com/api](https://airtable.com/api) and select a Base to view its API documentation. 
 
@@ -296,19 +296,19 @@ Scroll to **"Authentication"** section, switch to "JavaScript" and turn on "show
 
 ![Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/Untitled%203.png](Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/Untitled%203.png)
 
-Let's copy these values and paste them to our `.env` ****file in the Glitch app:
+Let's copy these values and paste them to your `.env` ****file in the Glitch app:
 
 ![Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/Untitled%204.png](Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/Untitled%204.png)
 
-## Testing our Chatbot
+## Testing your Chatbot
 
-Now that we have everything set up, navigate to your Facebook page, Click **"View as Visitor"** and, in visitor mode, click **"Send Message"**:
+Now that you have everything set up, navigate to your Facebook page, Click **"View as Visitor"** and, in visitor mode, click **"Send Message"**:
 
 ![Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/CleanShot_2020-10-26_at_23.59.27.gif](Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/CleanShot_2020-10-26_at_23.59.27.gif)
 
 Try to ask the bot whether it is safe to go to a restaurant and go through the quiz. It should rate your answers and give you an advice with a link to CDC page. 
 
-Yay! We did it! 🎉
+Yay! You did it! 🎉
 
 ![Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/CleanShot_2020-10-27_at_00.07.14.gif](Creating%20a%20Covid-19%20info%20chatbot%20with%20Facebook%20app%2078e7b28d019c4e5bbc5d3587a318ccf1/CleanShot_2020-10-27_at_00.07.14.gif)
 
@@ -319,5 +319,5 @@ Now that you have an idea how Facebook Messenger Platform,  [Wit.ai](http://wit.
 - Try to modify `quizSteps` in `quiz.js` and try to go through the quiz with the new scenarios
 - Take a peek at **"Understanding"** section of your project's  [Wit.ai](http://wit.ai) dashboard. New utterances, coming from production will appear at the top of the page — you can verify classification results and correct any mistakes to fine-tune your model
 - Train  [Wit.ai](http://wit.ai) to recognize another intent, for instance "Is loss of taste and smell is a symptom of COVID-19" could stand for a **"symptoms_info"**. Add a code to handle it in message handler in `app.js`
-- Here's another idea! Add a table with Activities to Airtable database and fill it with activity names and associated CDC article links on this page: [https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/going-out.html](https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/going-out.html). Implement a lookup to provide a relevant link, if such Activity was found in the table
+- Here's another idea! Add a table with Activities to Airtable database and fill it with activity names and associated CDC article links on this page: [https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/going-out.html](https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/going-out.html). Implement a lookup to provide a relevant link, if such Activity was found in the table.
 
