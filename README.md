@@ -15,8 +15,13 @@ Let's explore about:
 
 [Skills and Conversation Scenarios](#skills-and-conversation-scenarios)  
 [Dialog Example](#dialog-example)  
-
-
+[Training Wit.ai](#training-wit-ai)
+[Facebook Page](#facebook-page)
+[Facebook App](#facebook-app)
+[Glitch App](#glitch-app)
+[Environment Variables](#environment-variables)
+[Airtable](#airtable)
+[Testing your Chatbot](#testing-your-chatbot)
 
 Main source for health information is CDC official ["Daily Activities and Going Out" safety guide](https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/going-out.html).
 
