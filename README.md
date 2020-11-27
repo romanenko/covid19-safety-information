@@ -11,6 +11,13 @@ After this tutorial, you and your students will know
 - Basic knowledge of training AI models
 - Fun of making chatbots!
 
+Let's explore about:  
+
+[Skills and Conversation Scenarios](#skills-and-conversation-scenarios)  
+[Dialog Example](#dialog-example)  
+
+
+
 Main source for health information is CDC official ["Daily Activities and Going Out" safety guide](https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/going-out.html).
 
 ## Skills and Conversation Scenarios
