@@ -15,7 +15,7 @@ Let's explore about:
 
 [Skills and Conversation Scenarios](#skills-and-conversation-scenarios)  
 [Dialog Example](#dialog-example)   
-[Training Wit.ai](#training-wit-ai)     
+[Training Wit.ai](#training-Wit.AI)     
 [Facebook Page](#facebook-page)  
 [Facebook App](#facebook-app)  
 [Glitch App](#glitch-app)  
