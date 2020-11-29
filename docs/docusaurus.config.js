@@ -1,13 +1,13 @@
 module.exports = {
   title: 'Chatbot for Class',
   tagline: 'Build your own Chatbot',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://romanenko.github.com/covid19-safety-information',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'romanenko', // Usually your GitHub org/user name.
+  projectName: 'covid19-safety-information', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'Chatbot for Class',
