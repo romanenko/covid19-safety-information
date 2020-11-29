@@ -12,6 +12,15 @@ You are going to create a Facebook Messenger Chatbot in this tutorial, which wil
 - Basic knowledge of training AI models
 - Fun of making chatbots!
 
+## Facebook Products Used
+
+- [Messenger Platform](https://developers.facebook.com/docs/messenger-platform/)
+- [Wit.ai](http://wit.ai/)
+- [Facebook for Developers](https://developers.facebook.com/)
+- [Docusaurus](https://docusaurus.io/)
+
+And [Facebook Messenger](https://messenger.com/) to communicate and work on the article across different (13h) timezones
+
 ## Authors
 
 - [Jane Hyeseo Shin](https://github.com/janeshin059)

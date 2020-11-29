@@ -23,7 +23,12 @@ module.exports = {
           position: 'left',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'http://m.me/111708907337870',
+          label: 'Try it out',
+          position: 'left',
+        },
+        {
+          href: 'https://github.com/romanenko/covid19-safety-information',
           label: 'GitHub',
           position: 'right',
         },
@@ -46,19 +51,15 @@ module.exports = {
           ],
         },
         {
-          title: 'Community',
+          title: 'Legal',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Privacy Policy',
+              to: 'docs/privacy-policy',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              label: 'Terms of Service',
+              to: 'docs/terms-of-service',
             },
           ],
         },
@@ -67,12 +68,12 @@ module.exports = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/romanenko/covid19-safety-information',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Jane Hyeseo Shin, Michael Romanenko. Built with Docusaurus.`,
     },
   },
   presets: [
