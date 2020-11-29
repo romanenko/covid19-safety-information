@@ -73,7 +73,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://github.com/janeshin059">Jane Hyeseo Shin</a>, <a href="https://michael.romanenko.kg/">Michael Romanenko</a>. Built with <a href="https://docusaurus.io/">Docusaurus</a>.`,
+      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://github.com/janeshin059">Jane Hyeseo Shin</a>, <a href="https://michael.romanenko.kg/">Michael Romanenko</a>.<br /> Built with <a href="https://docusaurus.io/">Docusaurus</a>. Landing images by <a href="https://undraw.co/">unDraw</a>`,
     },
   },
   presets: [

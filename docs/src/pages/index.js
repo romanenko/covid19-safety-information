@@ -8,32 +8,30 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'How to create a Facebook Messenger Chatbot',
+    imageUrl: 'img/undraw_Group_chat_re_frmo.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Use Facebook technologies to easily create a Chatbot with AI.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: 'Basic knowledge of training AI models',
+    imageUrl: 'img/undraw_Artificial_intelligence_re_enpp.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Learn how to create Wit.ai apps and train AI models to help your bot 
+        understand user input better.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Have Fun with Chatbot in Class',
+    imageUrl: 'img/undraw_good_team_m7uu.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        CHANGE THIS LATER
       </>
     ),
   },

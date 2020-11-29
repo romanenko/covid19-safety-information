@@ -16,6 +16,6 @@ After this tutorial, you and your students will know
 - Basic knowledge of training AI models
 - Fun of making chatbots!
 
-_Main source for health information is CDC official ["Daily Activities and Going Out" safety guide](https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/going-out.html)._
+**Let's start exploring!**
 
-### Let's start exploring!
+_Main source for health information is CDC official ["Daily Activities and Going Out" safety guide](https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/going-out.html)._
