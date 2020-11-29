@@ -2,7 +2,7 @@ module.exports = {
   title: 'Chatbot for Class',
   tagline: 'Build your own Chatbot',
   url: 'https://romanenko.github.com/covid19-safety-information',
-  baseUrl: '/',
+  baseUrl: '/covid19-safety-information/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
