@@ -1,6 +1,6 @@
 ---
-id: bot-logic
-title: Bot Logic
+id: chatbot-logic
+title: Chatbot Logic
 ---
 
 Now, it's time to add a code to hook up all these things together! You'll need a Node.js app to make a bridge between Facebook app and [Wit.ai](http://wit.ai) App. 

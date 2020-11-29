@@ -53,5 +53,3 @@ Example of conversation the user might have with your bot:
 
 // And so on...
 ```
-
-Let's start by [creating Wit.ai app](wit-ai.md) 
