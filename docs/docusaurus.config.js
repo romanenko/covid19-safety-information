@@ -38,15 +38,15 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Guide',
           items: [
             {
-              label: 'Style Guide',
+              label: 'Chatbot for Class',
               to: 'docs/',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2/',
+              label: 'Future directions',
+              to: 'docs/ideas/',
             },
           ],
         },
@@ -73,7 +73,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Jane Hyeseo Shin, Michael Romanenko. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://github.com/janeshin059">Jane Hyeseo Shin</a>, <a href="https://michael.romanenko.kg/">Michael Romanenko</a>. Built with <a href="https://docusaurus.io/">Docusaurus</a>.`,
     },
   },
   presets: [
