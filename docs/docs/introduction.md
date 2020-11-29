@@ -9,7 +9,7 @@ You are going to create a Facebook Messenger Chatbot in this tutorial, which wil
 
 [Watch the short video about it](https://www.youtube.com/watch?v=FrucqUNOy9A)
 
-After this tutorial, you and your students will know
+After going through this tutorial, you and your students will know
 
 - How to create a Facebook App
 - How to create a [Wit.ai](http://wit.ai) App
