@@ -61,7 +61,7 @@ function Home() {
   return (
     <Layout
       title={siteConfig.title}
-      description="Description will go into a meta tag in <head />"
+      description="Build your own Chatbot for Facebook Messenger using Wit.ai"
     >
       <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">

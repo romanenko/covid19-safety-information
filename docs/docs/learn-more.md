@@ -1,6 +1,6 @@
 ---
 id: learn-more
-title: Keep learning
+title: Keep Learning
 ---
 
 ## Resources
