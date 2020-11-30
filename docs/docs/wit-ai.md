@@ -5,7 +5,7 @@ title: Training Wit.ai
 
 [Wit.ai](http://wit.ai/) is a tool to build an open source chatbot with advanced natural language(speech or messages) processing, or NLP.
 
-Let's start by signing up for [Wit.ai](http://wit.AI) account and creating the App. After you signed up, you will see [Wit.ai](http://wit.ai) main page. Click "New App" to create an app.
+Let's start by signing up for Wit.ai account and creating the App. After you signed up, you will see Wit.ai main page. Click "New App" to create an app.
 
 ![../static/img/article/Screen_Shot_2020-10-25_at_2.56.48_PM.png](../static/img/article/Screen_Shot_2020-10-25_at_2.56.48_PM.png)
 
