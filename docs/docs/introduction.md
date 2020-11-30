@@ -7,7 +7,7 @@ slug: /
 
 You are going to create a Facebook Messenger Chatbot in this tutorial, which will inform users whether it's safe to perform a certain activity or not. It will also provide a handy advice on how to stay safe during COVID-19 pandemic. 
 
-[Watch the short video about it](https://www.youtube.com/watch?v=FrucqUNOy9A)
+[Watch the short video about it](https://youtu.be/TF0dnHiiUzg)
 
 After going through this tutorial, you and your students will know
 
