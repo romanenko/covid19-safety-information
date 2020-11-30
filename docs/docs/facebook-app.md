@@ -3,7 +3,9 @@ id: facebook-app
 title: Facebook App
 ---
 
-You will need to register as a developer on [Facebook for Developers](https://developers.facebook.com/) portal. It's easy! Just hit the "**Log in"** menu item at the top right corner of the page and accept the legal agreement to get started.
+Creating a Facebook app is a way to add service to your Facebook page.   
+
+ First, You will need to register as a developer on [Facebook for Developers](https://developers.facebook.com/) portal. It's easy! Just hit the "**Log in"** menu item at the top right corner of the page and accept the legal agreement to get started.
 
 When you are done "**My Apps**" menu item will become available. Follow it and start creating an app.
 
