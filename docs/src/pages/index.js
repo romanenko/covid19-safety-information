@@ -8,11 +8,11 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'How to create a Facebook Messenger Chatbot',
+    title: 'Create a Facebook Messenger Chatbot',
     imageUrl: 'img/undraw_Group_chat_re_frmo.svg',
     description: (
       <>
-        Use Facebook technologies to easily create a Chatbot with AI.
+        Use Facebook technologies to easily create a chatbot.
       </>
     ),
   },
@@ -27,11 +27,11 @@ const features = [
     ),
   },
   {
-    title: 'Have Fun with Chatbot in Class',
+    title: 'Have fun together',
     imageUrl: 'img/undraw_good_team_m7uu.svg',
     description: (
       <>
-        CHANGE THIS LATER
+        Enjoy the fun of building chatbot and sharing ideas in classroom.
       </>
     ),
   },

@@ -84,7 +84,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/romanenko/covid19-safety-information',
+            'https://github.com/romanenko/covid19-safety-information/tree/main/docs',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
