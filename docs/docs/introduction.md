@@ -18,8 +18,4 @@ After this tutorial, you and your students will know
 
 **Let's start exploring!**
 
-This is the overall flow about what are you going to make.
-
-![../static/img/article/Diagram.png](../static/img/article/Diagram.png)
-
 _Main source for health information is CDC official ["Daily Activities and Going Out" safety guide](https://www.cdc.gov/coronavirus/2019-ncov/daily-life-coping/going-out.html)._
