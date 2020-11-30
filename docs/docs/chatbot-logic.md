@@ -3,11 +3,11 @@ id: chatbot-logic
 title: Chatbot Logic
 ---
 
-Now, it's time to add a code to hook up all these things together! You'll need a Node.js app to make a bridge between Facebook app and [Wit.ai](http://wit.ai) App. 
+Now, it's time to add some code to hook up all these things together! You'll need a Node.js app to make a bridge between Facebook app and [Wit.ai](http://wit.ai) App. 
 
 ## Node App
 
-No need to worry, there is a base code in the [Glitch](https://glitch.com/~covid-19-bot-tutorial) and you can simply copy the whole project with "**Remix Project**" button and adjust it as you want. It is going to be a project with same code but act as a unique App with the unique combination of environment variables.
+No need to worry, there is a base code in the [Glitch](https://glitch.com/~covid-19-bot-tutorial) and you can simply copy the whole project with "**Remix Project**" button and adjust it as you want. It is going to be a project with same code but act as a unique Application with its own set of environment variables.
 
 ![../static/img/article/Screen_Shot_2020-10-25_at_5.21.47_PM.png](../static/img/article/Screen_Shot_2020-10-25_at_5.21.47_PM.png)
 
@@ -18,7 +18,7 @@ It is a relatively simple Node.js app, which acts as a server to respond to requ
 
 The app consists of four main modules:
 
-### app.js - App entry point.
+### app.js - App entry point
 
 This is where Express server and [Wit.ai](http://wit.ai) connection sets up and main two webhook request handlers are implemented.
 
@@ -111,7 +111,7 @@ In this project you can control them by modifying the `.env` file and Glitch has
 
 ![../static/img/article/Untitled.png](../static/img/article/Untitled.png)
 
-Now, you are going to fill the environment variables which are required to connect Facebook app and [Wit.ai](http://wit.ai) app.
+Now, you are going to fill in the environment variables which are required to connect Facebook app and [Wit.ai](http://wit.ai) app.
 
 First, let's get the app secret. Let's go to your Facebook app → Settings → Basic. Copy and paste the **App Secret** in the FB_APP_SECRET of the Glitch `.env`. It may require your facebook password to get **App Secret** for the first time. 
 
@@ -135,7 +135,7 @@ The last step is **FB_PAGE_TOKEN**. Go to your Facebook app → Messenger → Se
 
 Every time your Node app receives the message — you should assume it might be unaware of all previous actions. To keep it in context of ongoing conversation you have to keep the state of it in some **persistence layer.** 
 
-Some apps doesn't require having one, but conversational apps, usually do. In this case, you will keep quiz progress across the dialog events and remove it, once the quiz is completed — you don't need to keep any extra data after it.
+Some apps doesn't require having one, but conversational apps usually do. In this case, you will keep quiz progress across the dialog events and remove it, once the quiz is completed — you don't need to keep any extra data after it.
 
 You will use [Airtable](https://airtable.com/) as a simple service to store session data for ongoing quizzes and access it with its handy JavaScript library.
 
@@ -167,7 +167,7 @@ Now, to connect this table to your Glitch app, you'll need to get its Base id an
 
 Navigate to: [https://airtable.com/api](https://airtable.com/api) and select a Base to view its API documentation. 
 
-Scroll to **"Authentication"** section, switch to "JavaScript" and turn on "show API key" checkbox:
+Scroll down to **"Authentication"** section, switch to "JavaScript" and turn on "show API key" checkbox:
 
 ![../static/img/article/airtable3.png](../static/img/article/airtable3.png)
 

@@ -1,46 +1,49 @@
-import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import styles from './styles.module.css';
+import React from "react";
+import clsx from "clsx";
+import Layout from "@theme/Layout";
+import Link from "@docusaurus/Link";
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import useBaseUrl from "@docusaurus/useBaseUrl";
+import styles from "./styles.module.css";
 
 const features = [
   {
-    title: 'Create a Facebook Messenger Chatbot',
-    imageUrl: 'img/undraw_Group_chat_re_frmo.svg',
+    title: "How to create a Facebook Messenger Chatbot",
+    imageUrl: "img/undraw_Group_chat_re_frmo.svg",
     description: (
       <>
-        Use Facebook technologies to easily create a chatbot.
+        Use Facebook technologies to easily create a Chatbot with AI
+        capabilities.
       </>
     ),
   },
   {
-    title: 'Basic knowledge of training AI models',
-    imageUrl: 'img/undraw_Artificial_intelligence_re_enpp.svg',
+    title: "Basic knowledge of training AI models",
+    imageUrl: "img/undraw_Artificial_intelligence_re_enpp.svg",
     description: (
       <>
-        Learn how to create Wit.ai apps and train AI models to help your bot 
-        understand user input better.
+        Learn how to use Wit.ai to create intelligent conversational interfaces
+        and train AI models to help your bot understand user input better.
       </>
     ),
   },
   {
-    title: 'Have fun together',
-    imageUrl: 'img/undraw_good_team_m7uu.svg',
+    title: "Have Fun with Chatbot in Class",
+    imageUrl: "img/undraw_good_team_m7uu.svg",
     description: (
       <>
-        Enjoy the fun of building chatbot and sharing ideas in classroom.
+        Learn more about Facebook Messenger Platform and use it to create a
+        useful application to help people stay safe, planning everyday
+        activities
       </>
     ),
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={clsx('col col--4', styles.feature)}>
+    <div className={clsx("col col--4", styles.feature)}>
       {imgUrl && (
         <div className="text--center">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
@@ -54,22 +57,24 @@ function Feature({imageUrl, title, description}) {
 
 function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+      title={siteConfig.title}
+      description="Build your own Chatbot for Facebook Messenger using Wit.ai"
+    >
+      <header className={clsx("hero hero--primary", styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
               className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
+                "button button--outline button--secondary button--lg",
+                styles.getStarted
               )}
-              to={useBaseUrl('docs/')}>
+              to={useBaseUrl("docs/")}
+            >
               Get Started
             </Link>
           </div>

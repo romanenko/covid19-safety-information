@@ -1,6 +1,6 @@
 ---
 id: learn-more
-title: Keep learning
+title: Keep Learning
 ---
 
 ## Resources
@@ -10,7 +10,7 @@ title: Keep learning
 
 ## Contact the Authors
 
-Drop us a line to share share what you have built!
+Drop us a line to share what you have built!
 
 - [Jane Hyeseo Shin](https://github.com/janeshin059)
 - [Michael Romanenko](https://michael.romanenko.kg/)
