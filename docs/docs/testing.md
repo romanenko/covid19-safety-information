@@ -9,6 +9,7 @@ Now that you have everything set up, navigate to your Facebook page, Click **"Vi
 
 Try to ask the bot whether it is safe to go to a restaurant and go through the quiz. It should rate your answers and give you an advice with a link to CDC page. 
 
-Yay! You did it! 🎉
-
 ![../static/img/article/CleanShot_2020-10-27_at_00.07.14.gif](../static/img/article/CleanShot_2020-10-27_at_00.07.14.gif)
+
+![https://media.giphy.com/media/L0O3TQpp0WnSXmxV8p/giphy-downsized.gif](https://media.giphy.com/media/L0O3TQpp0WnSXmxV8p/giphy-downsized.gif)
+

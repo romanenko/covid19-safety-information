@@ -13,7 +13,7 @@ const features = [
     description: (
       <>
         Use Facebook technologies to easily create a Chatbot with AI
-        capabilities.
+        capabilities
       </>
     ),
   },
@@ -23,7 +23,7 @@ const features = [
     description: (
       <>
         Learn how to use Wit.ai to create intelligent conversational interfaces
-        and train AI models to help your bot understand user input better.
+        and train AI models to help your bot understand user input better
       </>
     ),
   },
@@ -33,8 +33,7 @@ const features = [
     description: (
       <>
         Learn more about Facebook Messenger Platform and use it to create a
-        useful application to help people stay safe, planning everyday
-        activities
+        useful application to help people stay safe
       </>
     ),
   },

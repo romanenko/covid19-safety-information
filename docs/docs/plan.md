@@ -17,7 +17,7 @@ This brings you and your students to the three skills, you need your bot to have
 
 You will use Facebook and its [Messenger Platform](https://developers.facebook.com/docs/messenger-platform/) to provide conversational interface to the user, [Wit.ai](http://wit.ai) to make it understand input in natural language and [Airtable](https://airtable.com) to store health information about the activities and to keep the progress of the Quiz.
 
-This is the overall flow of what you are going to implement:
+#### This is the overall flow of what you are going to implement:
 
 ![../static/img/article/Diagram.png](../static/img/article/Diagram.png)
 
