@@ -3,9 +3,9 @@ id: wit-ai
 title: Training Wit.ai
 ---
 
-[Wit.ai](http://wit.ai/) is a tool to build an open source chatbot with advanced natural language(speech or messages) processing, or NLP.
+[Wit.ai](http://wit.ai/) is a platform to help building conversational interfaces with advanced Natural Language Processing, (NLP) capabilities.
 
-Let's start by signing up for Wit.ai account and creating the App. After you signed up, you will see Wit.ai main page. Click "New App" to create an app.
+Let's start by signing up for Wit.ai account and creating the app. After you signed up, you will see Wit.ai main page. Click **"New App"** to create an app.
 
 ![../static/img/article/Screen_Shot_2020-10-25_at_2.56.48_PM.png](../static/img/article/Screen_Shot_2020-10-25_at_2.56.48_PM.png)
 
@@ -17,9 +17,9 @@ The goal of training is to create an accurate model that answers our questions c
 
 To train your Wit.ai app, you need to give **utterances** (questions that users might ask), such as:
 
-  Is going to the gym safe?
+>  Is going to the gym safe?
 
-  Is it safe to use outdoor dining?
+>  Is it safe to use outdoor dining?
 
 You don’t need to describe every way of the questions. Wit will infer this from the few examples you gave. These examples are the training set of your Wit. So, the more examples you give, the better your app will understand what your users are saying.
 
@@ -31,4 +31,4 @@ The app should also be able to handle **gibberish**, a random word that will be 
 
 ![../static/img/article/CleanShot_2020-10-27_at_00.24.16.gif](../static/img/article/CleanShot_2020-10-27_at_00.24.16.gif)
 
-You can always get some ideas and examples from already created [Wit.ai](http://wit.ai) App in [here](https://wit.ai/apps/695984467678144/understanding).
+You can always get some ideas and examples from already created [Wit.ai](http://wit.ai) app in [here](https://wit.ai/apps/695984467678144/understanding).

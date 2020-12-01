@@ -3,24 +3,26 @@ id: chatbot-logic
 title: Chatbot Logic
 ---
 
-Now, it's time to add some code to hook up all these things together! You'll need a Node.js app to make a bridge between Facebook app and [Wit.ai](http://wit.ai) App. 
+Now, it's time to add some code to hook up all these things together! You'll need a Node.js app to make a bridge between Facebook app and [Wit.ai](http://wit.ai) app. 
 
 ## Node App
 
-No need to worry, there is a base code in the [Glitch](https://glitch.com/~covid-19-bot-tutorial) and you can simply copy the whole project with "**Remix Project**" button and adjust it as you want. It is going to be a project with same code but act as a unique Application with its own set of environment variables.
+No need to worry, there is a basic project, hosted on the [Glitch](https://glitch.com/~covid-19-bot-tutorial), and you can simply copy the whole project with "**Remix Project**" button and adjust it as you want. It will create a duplicate project with same code but acting as a unique application with its own configuration.
 
 ![../static/img/article/Screen_Shot_2020-10-25_at_5.21.47_PM.png](../static/img/article/Screen_Shot_2020-10-25_at_5.21.47_PM.png)
 
-It is a relatively simple Node.js app, which acts as a server to respond to requests, coming from the Facebook App. It handles two types of requests:
+It is a relatively simple Node.js app, acting as a Web server to respond to requests, coming from the Facebook app. It handles two types of requests:
 
 - `GET /webhook` — to setup and verify a webhook URL
 - `POST /webhook` — to receive, process and respond to incoming messages
+
+It also uses Facebook Messenger Platform's [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api/) to send messages back to the user.
 
 The app consists of four main modules:
 
 ### app.js - App entry point
 
-This is where Express server and [Wit.ai](http://wit.ai) connection sets up and main two webhook request handlers are implemented.
+This is where [Express.js](https://expressjs.com) server and [Wit.ai](http://wit.ai) client sets up and main two webhook request handlers are implemented.
 
 The most notable part is the message handler code:
 
@@ -97,7 +99,7 @@ const quizSteps = [
 ];
 ```
 
-Where each step of it has a `question` and set of `quickReplies` to suggest to the User. Field `columnName` represents the name of the column in Airtable, used to store the answer, while User goes through the Quiz. Values, stored in the table are integers in range of 1-3.
+Each step of it has a `question` and set of `quickReplies` to suggest to the User. Field `columnName` represents the name of the column in Airtable, used to store the answer, while User goes through the Quiz. Values, stored in the table are integers in range of 1-3.
 
 ### db.js and messenger.js
 
@@ -105,15 +107,15 @@ These modules are used to help establish communication with Facebook Messenger P
 
 ## Environment Variables
 
-Variables which get to set in the environment of the app, before it gets executed. Values then are used in code — this is a common practice to keep secret keys separate from the codebase.
+Variables which gets set in the environment of the app, before it gets started. Then, during the app execution, these values can be used in code. This is a common practice to keep secrets separate from the codebase.
 
-In this project you can control them by modifying the `.env` file and Glitch has a neat UI to manage it:
+In this project you can set them by modifying the `.env` file. Glitch has a neat UI to manage it:
 
 ![../static/img/article/Untitled.png](../static/img/article/Untitled.png)
 
-Now, you are going to fill in the environment variables which are required to connect Facebook app and [Wit.ai](http://wit.ai) app.
+#### Now, you are going to fill in the environment variables which are required to connect Facebook app and [Wit.ai](http://wit.ai) app
 
-First, let's get the app secret. Let's go to your Facebook app → Settings → Basic. Copy and paste the **App Secret** in the FB_APP_SECRET of the Glitch `.env`. It may require your facebook password to get **App Secret** for the first time. 
+First, let's get the Facebook app secret token. Let's go to your Facebook app → Settings → Basic. Copy and paste the **App Secret** in the FB_APP_SECRET of the Glitch `.env`. It may require your facebook password to get **App Secret** for the first time. 
 
 ![../static/img/article/2020-10-25_18.12.38.gif](../static/img/article/2020-10-25_18.12.38.gif)
 
@@ -127,7 +129,7 @@ Go to your Facebook App → Messenger → Settings and generate click "Add callb
 
 ![../static/img/article/2020-10-25_19.19.29.gif](../static/img/article/2020-10-25_19.19.29.gif)
 
-The last step is **FB_PAGE_TOKEN**. Go to your Facebook app → Messenger → Settings and generate the token. Remove your previous **FB_PAGE_TOKEN** and paste the token.
+The last step is **FB_PAGE_TOKEN**. Go to your Facebook app → Messenger → Settings and generate it. Remove your previous **FB_PAGE_TOKEN** value and paste the new one.
 
 ![../static/img/article/2020-10-25_19.24.35.gif](../static/img/article/2020-10-25_19.24.35.gif)
 
@@ -171,6 +173,6 @@ Scroll down to **"Authentication"** section, switch to "JavaScript" and turn on 
 
 ![../static/img/article/airtable3.png](../static/img/article/airtable3.png)
 
-Let's copy these values and paste them to your `.env` ****file in the Glitch app:
+Let's copy these values and paste them to your `.env` file in the Glitch app:
 
 ![../static/img/article/airtable4.png](../static/img/article/airtable4.png)
